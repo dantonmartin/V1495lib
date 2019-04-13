@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	
 	OpenDevice(CAENComm_OpticalLink, 1, 0, 0x76540000, &handle);
 
-	printf("Open Error Code: %d\n", OpenDevice(1, 1, 0, 0x7654000, &handle));
+	printf("Open Error Code: %d\n", OpenDevice(CAENComm_OpticalLink, 1, 0, 0x7654000, &handle));
 	
 	if ( v == 0 ) {
 		printf("Writing.\nEnter the Address:   ");
